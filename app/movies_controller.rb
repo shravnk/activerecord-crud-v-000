@@ -6,13 +6,14 @@
 # end                              # end
 
 def can_be_instantiated_and_then_saved
+  binding.pry
   movie = Movie.new
   movie.title = "This is a title."
   movie
 end
 
 def can_be_created_with_a_hash_of_attributes
-  binding.pry
+  
   attributes = {
       title: "The Sting",
       release_date: 1973,
